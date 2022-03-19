@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #380868;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  
+  .active {
+    background-color: #f30101;
+    border-radius: 0.3rem;
+  }
+  
+  .bar-separator {
+    width: 95%;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 1040px) {
+    html {
+      font-size: 70%;
+    }
+  }
+  .header-top {
+    width: 100vw;
+    max-width: 1380px;
+    background-color: #221B31;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+  .header-top .nav-top .list {
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header-top .nav-top .list .list-item {
+    padding: 1rem 0;
+  }
+  .header-top .nav-top .list .list-item .item {
+    padding: 0.8rem 0.5rem;
+    text-decoration: none;
+    color: #EAEAEA;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    position: relative;
+  }
+  .header-top .nav-top .list .list-item .item:hover {
+    opacity: 0.8;
+  }
+  .header-top .nav-top .list .list-item .item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    background-color: #4F1937;
+    left: 0.4rem;
+    top: 2rem;
+    transition: width 0.4s ease-in-out;
+  }
+  .header-top .nav-top .list .list-item .item:hover::before {
+    width: 80%;
+  }
+  .header-top .nav-top .list .list-item .one::after {
+    opacity: 0;
+  }
+  .header-top .nav-top .mobile-menu {
+    cursor: pointer;
+    display: none;
+  }
+  .header-top .nav-top .mobile-menu div {
+    background-color: #EAEAEA;
+    width: 2rem;
+    height: 2px;
+    margin: 8px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  @media screen and (max-width: 1040px) {
+    body {
+      overflow-x: hidden;
+    }
+    body .header-top .nav-top .mobile-menu {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      z-index: 12;
+    }
+    body .header-top .nav-top .mobile-menu.show .line1 {
+      transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    body .header-top .nav-top .mobile-menu.show .line2 {
+      opacity: 0;
+    }
+    body .header-top .nav-top .mobile-menu.show .line3 {
+      transform: rotate(45deg) translate(-5px, -7px);
+    }
+    body .header-top .nav-top .list {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      flex-direction: column;
+      background-color: #221B31;
+      transform: translateX(100%);
+      transition: transform 0.6s ease-in-out;
+    }
+    body .header-top .nav-top .list.show {
+      transform: translateX(0);
+    }
+    body .header-top .nav-top .list.show .list-item:nth-child(1) {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    body .header-top .nav-top .list.show .list-item:nth-child(2) {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    body .header-top .nav-top .list.show .list-item:nth-child(3) {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    body .header-top .nav-top .list.show .list-item:nth-child(4) {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    body .header-top .nav-top .list.show .list-item:nth-child(5) {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    body .header-top .nav-top .list.show .list-item:nth-child(6) {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    body .header-top .nav-top .list.show .list-item:nth-child(7) {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    body .header-top .nav-top .list .list-item:nth-child(1) {
+      margin-top: 1rem;
+      opacity: 0;
+      transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    }
+    body .header-top .nav-top .list .list-item:nth-child(2) {
+      opacity: 0;
+      transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    }
+    body .header-top .nav-top .list .list-item:nth-child(3) {
+      opacity: 0;
+      transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    }
+    body .header-top .nav-top .list .list-item:nth-child(4) {
+      opacity: 0;
+      transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    }
+    body .header-top .nav-top .list .list-item:nth-child(5) {
+      opacity: 0;
+      transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    }
+    body .header-top .nav-top .list .list-item:nth-child(6) {
+      opacity: 0;
+      transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    }
+    body .header-top .nav-top .list .list-item:nth-child(7) {
+      opacity: 0;
+      transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    }
+    body .header-top .nav-top .list .list-item .item {
+      font-size: 1.3rem;
+    }
+    body .header-top .nav-top .list .list-item .item::after {
+      opacity: 0;
+    }
+  }
+  .main {
+    width: 100%;
+    max-width: 1380px;
+    color: #EAEAEA;
+  }
+  .main #home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #221B31;
+    width: 100%;
+    height: 100vh;
+  }
+  .main #home .title {
+    font-size: 3rem;
+    color: #EAEAEA;
+  }
+  .main #home .title .title--red {
+    color: red;
+  }
+  .main #about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #221B31;
+    width: 100%;
+    height: 100vh;
+  }
+  .main #about .title-about {
+    font-size: 2.2rem;
+  }
+  .main #about .text-about {
+    width: 60%;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+  .main #services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #221B31;
+    width: 100%;
+  }
+  .main #services .title-services {
+    font-size: 2.2rem;
+    margin-top: 10rem;
+  }
+  .main #services .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+  }
+  .main #services .cards div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main #services .cards div .layout-card {
+    width: 70%;
+    height: 10vh;
+    margin: 10px;
+    background-color: #221B31;
+    box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.145);
+    position: relative;
+  }
+  .main #services .cards div .cards-on {
+    transition: transform 0.3s ease-in-out;
+  }
+  .main #services .cards div .cards-on::after {
+    content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis asperiores iure recusandae enim maiores illo, esse quidem quia dolore ipsum repellendus rerum aliquam doloremque dignissimos repellat corrupti voluptate eveniet vero error a consectetur! Unde debitis sint ad quos quas, molestiae iste numquam illo quaerat nam enim omnis ullam vitae doloribus a accusantium minima, nemo aspernatur, facere nobis culpa quasi rerum aliquid. Iste quisquam repudiandae temporibus veritatis, eaque quae quidem error doloribus nostrum qui eveniet aliquam est vel consectetur architecto!";
+    position: absolute;
+    font-size: 0.9rem;
+    text-align: center;
+    top: 3rem;
+    width: 470px;
+    background-color: #221B31;
+    overflow-y: hidden;
+    height: 0;
+    transition: height 0.6s ease-in-out;
+    z-index: 1;
+  }
+  .main #services .cards div .cards-on .title-on {
+    transition: 0.3s ease-in-out;
+  }
+  .main #services .cards div .cards-on:hover {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  .main #services .cards div .cards-on:hover .title-on {
+    transform: translateY(-8px);
+  }
+  .main #services .cards div .cards-on:hover::after {
+    height: 150px;
+  }
+  .main #services .text-services {
+    margin: 6rem 0 3rem 0;
+  }
+  .main #managements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #221B31;
+    width: 100%;
+    height: 50vh;
+  }
+  .main #managements .cards-managements {
+    width: 100%;
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+  }
+  .main #managements .cards-managements .card1 {
+    background-color: #221B31;
+  }
+  .main #managements .cards-managements .card2 {
+    background-color: #221B31;
+  }
+  .main #managements .cards-managements .card3 {
+    background-color: #221B31;
+  }
+  
+  /*# sourceMappingURL=styles.css.map */
+  
