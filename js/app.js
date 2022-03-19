@@ -43,6 +43,8 @@ class MobileNavbar {
   mobileNavbar.init();
 
 
+
+
 const header = document.querySelector('.header-top')
 const navHeight = header.offsetHeight
 
@@ -55,6 +57,9 @@ window.addEventListener('scroll', () => {
 } )
 
 
+
+
+
 const navLink = document.querySelectorAll('.item');   
 
 function linkAction(){
@@ -65,6 +70,8 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
 
+
+
 const swiper = new Swiper('.swiper', {
     slidesPreView: 1,
     pagination: {
@@ -73,3 +80,14 @@ const swiper = new Swiper('.swiper', {
     mousewheel: true,
     keyboard: true,
 });
+
+
+
+const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '10rem',
+    duration: 700,
+    reset: true
+})
+
+scrollReveal.reveal(`#home .title`, { delay: 300 })
