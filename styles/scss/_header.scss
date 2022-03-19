@@ -3,13 +3,14 @@
 .header-top {
     width: 100vw;
     max-width: 1380px;
-    background-color: $bg-primary;
+    background-color: #221b31fc;
     position: fixed;
     top: 0;
     z-index: 10;
 
     .nav-top {
-        
+        width: 85%;
+        margin: 0 auto;
 
         .list {
             margin: 0 auto;
@@ -19,10 +20,10 @@
             justify-content: space-around;
 
             .list-item {
-                padding: 1rem 0;
+                padding: 1.5rem 0;
                 
                 .item {
-                    padding: .8rem .5rem;
+                    padding: .4rem .5rem;
                     text-decoration: none;
                     color: $color-primary;
                     text-transform: uppercase;
@@ -46,15 +47,15 @@
                         content: '';
                         position: absolute;
                         width: 0;
-                        height: 1.5px;
-                        background-color: #4F1937;
+                        height: 2px;
+                        background-color: #eeeeee;
                         left: .4rem;
-                        top: 2rem;
+                        top: 1.5rem;
                         transition: width .4s ease-in-out;
 
                     }
                     &:hover::before {
-                        width: 80%;
+                        width: 85%;
                     }
 
 
@@ -83,7 +84,7 @@
     }
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1000px) {
     body {
         overflow-x: hidden;
 
@@ -95,6 +96,7 @@
                     display: block;
                     position: absolute;
                     right: 1rem;
+                    top: .2rem;
                     z-index: 12;
     
                     &.show .line1 {

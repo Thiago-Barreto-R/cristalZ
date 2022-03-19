@@ -41,3 +41,35 @@ class MobileNavbar {
     ".list li",
   );
   mobileNavbar.init();
+
+
+const header = document.querySelector('.header-top')
+const navHeight = header.offsetHeight
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY >= navHeight) {
+        header.classList.add('scroll')
+    } else {
+        header.classList.remove('scroll')
+    }
+} )
+
+
+const navLink = document.querySelectorAll('.item');   
+
+function linkAction(){
+  /*Active link*/
+  navLink.forEach(n => n.classList.remove('active'));
+  this.classList.add('active');
+}
+navLink.forEach(n => n.addEventListener('click', linkAction));
+
+
+const swiper = new Swiper('.swiper', {
+    slidesPreView: 1,
+    pagination: {
+        el: '.swiper-pagination'
+    },
+    mousewheel: true,
+    keyboard: true,
+});

@@ -19,8 +19,8 @@ body {
 }
 
 .active {
-    background-color: rgb(243, 1, 1);
-    border-radius: .3rem;
+    background-color: #eeeeee1e;
+    border-radius: .4rem;
 }
 
 .bar-separator {
@@ -30,8 +30,18 @@ body {
     margin: 0 auto;
 }
 
-@media (max-width: 1040px) {
+.header-top.scroll {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.639);
+}
+
+.swiper {
+    width: 80%;
+    height: 200px;
+    margin-top: 6rem;
+}
+
+@media (max-width: 800px) {
     html {
-        font-size: 70%;
+        font-size: 80%;
     }
 }

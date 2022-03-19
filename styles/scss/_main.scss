@@ -37,8 +37,8 @@
         }
 
         .text-about {
-            width: 60%;
-            font-size: 1.5rem;
+            width: 50%;
+            font-size: 1.3rem;
             margin-top: 3rem;
         }
     }
@@ -75,7 +75,7 @@
                     height: 10vh;
                     margin: 10px;
                     background-color: #221B31;
-                    box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.145);
+                    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.07);
                     position: relative;
                 }
 
@@ -88,7 +88,7 @@
                         font-size: .9rem;
                         text-align: center;
                         top: 3rem;
-                        width: 470px;
+                        width: 100%;
                         background-color: $bg-primary;
                         overflow-y: hidden;
                         height: 0;
@@ -118,30 +118,105 @@
 
         .text-services {
             margin: 6rem 0 3rem 0;
+            color: $color-secondary;
         }
     }
 
     #managements {
         background-color: $bg-primary;
         width: 100%;
-        height: 50vh;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
 
         .cards-managements {
             width: 100%;
             margin-top: 8rem;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
             
 
             .card1 {
-                background-color: #221B31;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20%;
+                height: 10vh;
+                box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+                background-color: #221b31;
             }
             .card2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20%;
+                height: 10vh;
+                box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221B31;
             }
             .card3 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20%;
+                height: 10vh;
+                box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221B31;
+            }
+        }
+    }
+
+
+    #testimonies {
+        width: 100%;
+        background-color: $bg-primary;
+        display: block;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .title-testimonies {
+            margin-top: 8rem;
+        }
+
+        .cards-testimonies {
+            
+            div {
+
+                .card {
+                    width: 25rem;
+                    height: 9rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    flex-direction: column;
+                    background-color: #332948;
+                    box-shadow:  0 0 0 0 #000;
+                    position: relative;
+                    border-radius: .5rem;
+                    padding: .5rem;
+                    left: 22rem;
+    
+                    .comments {
+                        font-size: 1rem;
+                    }
+    
+                    cite {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        
+                        img {
+                            margin: 0 .5rem;
+                            height: 3.5rem;
+                        }
+                    }
+                }
             }
         }
     }
