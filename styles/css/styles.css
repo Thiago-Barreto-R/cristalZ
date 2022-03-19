@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #380868;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +40,7 @@ body {
 }
 
 .swiper-horizontal .swiper-pagination-bullets, .swiper-horizontal .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-horizontal .swiper-pagination-custom, .swiper-horizontal .swiper-pagination-fraction {
-  bottom: -2px;
+  bottom: 30px;
   left: 0px;
   width: 100%;
 }
@@ -66,16 +66,6 @@ body {
   transform: translateY(0);
 }
 
-@media (min-width: 950px) {
-  .swiper {
-    width: 700px;
-  }
-}
-@media (max-width: 800px) {
-  html {
-    font-size: 80%;
-  }
-}
 .header-top {
   width: 100vw;
   max-width: 1380px;
@@ -170,7 +160,8 @@ body {
   font-size: 2.2rem;
 }
 .main #about .text-about {
-  width: 50%;
+  width: 80%;
+  text-align: center;
   font-size: 1.3rem;
   margin-top: 3rem;
 }
@@ -267,6 +258,49 @@ body {
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221B31;
 }
+.main #sales {
+  background-color: #221B31;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main #sales .cards-sales-bot {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main #sales .cards-sales-bot .card1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 10vh;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+  background-color: #221b31;
+}
+.main #sales .cards-sales-bot .card2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 10vh;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+  background-color: #221B31;
+}
+.main #sales .cards-sales-bot .card3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 10vh;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+  background-color: #221B31;
+}
 .main #testimonies {
   width: 100%;
   background-color: #221B31;
@@ -276,14 +310,13 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 0 0 1rem;
 }
 .main #testimonies .title-testimonies {
   margin-top: 6rem;
 }
 .main #testimonies .cards-testimonies .swiper-wrapper .swiper-slide .card {
   width: 95%;
-  height: 20vh;
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -312,17 +345,6 @@ body {
   height: 3.5rem;
 }
 
-@media (max-width: 1000px) {
-  .main #managements .cards-managements {
-    flex-direction: column;
-    gap: 2rem;
-  }
-}
-@media (max-width: 800px) {
-  #testimonies {
-    background-color: red;
-  }
-}
 @media screen and (max-width: 1100px) {
   body {
     overflow-x: hidden;
@@ -396,6 +418,10 @@ body {
     transform: translateX(0);
     opacity: 1;
   }
+  body .header-top .nav-top .list.show .list-item:nth-child(10) {
+    transform: translateX(0);
+    opacity: 1;
+  }
   body .header-top .nav-top .list .list-item {
     padding: 0;
   }
@@ -443,11 +469,45 @@ body {
     opacity: 0;
     transition: transform 1s ease-in-out, opacity 1s ease-in-out;
   }
+  body .header-top .nav-top .list .list-item:nth-child(10) {
+    margin-top: -8rem;
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  }
   body .header-top .nav-top .list .list-item .item {
     font-size: 1rem;
   }
   body .header-top .nav-top .list .list-item .item::after {
     opacity: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .main #managements .cards-managements {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .main #sales .cards-sales-bot {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .main #about .text-about {
+    width: 80%;
+  }
+
+  .swiper-horizontal .swiper-pagination-bullets, .swiper-horizontal .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-horizontal .swiper-pagination-custom, .swiper-horizontal .swiper-pagination-fraction {
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+  }
+}
+@media (min-width: 950px) {
+  .swiper {
+    width: 700px;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 80%;
   }
 }
 

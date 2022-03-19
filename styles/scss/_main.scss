@@ -37,7 +37,8 @@
         }
 
         .text-about {
-            width: 50%;
+            width: 80%;
+            text-align: center;
             font-size: 1.3rem;
             margin-top: 3rem;
         }
@@ -169,6 +170,53 @@
         }
     }
 
+    #sales {
+        background-color: $bg-primary;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .cards-sales-bot {
+            width: 100%;
+            margin-top: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .card1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 15rem;
+                height: 10vh;
+                box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+                background-color: #221b31;
+            }
+            .card2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 15rem;
+                height: 10vh;
+                box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+                background-color: #221B31;
+            }
+            .card3 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 15rem;
+                height: 10vh;
+                box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+                background-color: #221B31;
+            }
+        }
+        
+    }
+
 
     #testimonies {
         width: 100%;
@@ -179,7 +227,6 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding: 0 0 0 1rem;
 
         .title-testimonies {
             margin-top: 6rem;
@@ -193,7 +240,7 @@
 
                     .card {
                         width: 95%;
-                        height: 20vh;
+                        height: 70%;
                         display: flex;
                         align-items: center;
                         justify-content: flex-end;
@@ -228,27 +275,5 @@
                 }
             }
         }
-    }
-}
-
-@media (max-width: 1000px) {
-    .main {
-
-        #managements {
-            
-            .cards-managements {
-                flex-direction: column;
-                gap: 2rem;
-            }
-        }
-    }
-}
-
-@media (max-width: 800px) {
-    .swiper {
-
-    }
-    #testimonies {
-        background-color: red;
     }
 }
