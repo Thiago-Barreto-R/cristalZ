@@ -79,27 +79,47 @@ const swiper = new Swiper('.swiper', {
     },
     mousewheel: true,
     keyboard: true,
+    breakpoints: {
+      950: {
+        slidesPerView: 2,
+        setWrapperSize: true
+      }
+    }
 });
 
 
 
 const scrollReveal = ScrollReveal({
     origin: 'top',
-    distance: '5rem',
+    distance: '1rem',
     duration: 800,
     reset: true
-})
+});
 
 scrollReveal.reveal(`#home .title,
                     #about .title-about, #about .text-about,
                     #services .title-services`, 
-                    { interval: 100 })
+                    { interval: 100 });
+
+                    
 const scrollReveal2 = ScrollReveal({
     origin: 'left',
     distance: '20rem',
     duration: 800,
     reset: true
-})
+});
 
-scrollReveal2.reveal(`#managements .card1, #managements .card2, #managements .card3`, 
-                    { interval: 300 })
+scrollReveal2.reveal(`#services .layout-card,
+                    #managements .card1, #managements .card2, #managements .card3`, 
+                    { interval: 150 });
+
+
+const backToTopButton = document.querySelector('.back-to-top')
+
+window.addEventListener('scroll', function() {
+  if(window.scrollY >= 20) {
+    backToTopButton.classList.add('appaer')
+  } else {
+    backToTopButton.classList.remove('appaer')
+  }
+})
