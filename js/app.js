@@ -85,9 +85,21 @@ const swiper = new Swiper('.swiper', {
 
 const scrollReveal = ScrollReveal({
     origin: 'top',
-    distance: '10rem',
-    duration: 700,
+    distance: '5rem',
+    duration: 800,
     reset: true
 })
 
-scrollReveal.reveal(`#home .title`, { delay: 300 })
+scrollReveal.reveal(`#home .title,
+                    #about .title-about, #about .text-about,
+                    #services .title-services`, 
+                    { interval: 100 })
+const scrollReveal2 = ScrollReveal({
+    origin: 'left',
+    distance: '20rem',
+    duration: 800,
+    reset: true
+})
+
+scrollReveal2.reveal(`#managements .card1, #managements .card2, #managements .card3`, 
+                    { interval: 300 })
