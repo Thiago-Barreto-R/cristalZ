@@ -1,0 +1,153 @@
+@use 'variables' as * ;
+
+.main {
+    width: 100%;
+    max-width: 1380px;
+    color: $color-primary;
+
+    #home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $bg-primary;
+        width: 100%;
+        height: 100vh;
+
+        .title {
+            font-size: 3rem;
+            color: $color-primary;
+
+            .title--red {
+                color: red;
+            }
+        }
+    }
+
+    #about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $bg-primary;
+        width: 100%;
+        height: 100vh;
+
+        .title-about {
+            font-size: 2.2rem;
+        }
+
+        .text-about {
+            width: 60%;
+            font-size: 1.5rem;
+            margin-top: 3rem;
+        }
+    }
+
+    #services {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $bg-primary;
+        width: 100%;
+
+        .title-services {
+            font-size: 2.2rem;
+            margin-top: 10rem;
+        }
+
+        .cards {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            align-items: center;
+            justify-content: center;
+            margin-top: 8rem;
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .layout-card {
+                    width: 70%;
+                    height: 10vh;
+                    margin: 10px;
+                    background-color: #221B31;
+                    box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.145);
+                    position: relative;
+                }
+
+                .cards-on {
+                    transition: transform .3s ease-in-out;
+
+                    &::after {
+                        content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis asperiores iure recusandae enim maiores illo, esse quidem quia dolore ipsum repellendus rerum aliquam doloremque dignissimos repellat corrupti voluptate eveniet vero error a consectetur! Unde debitis sint ad quos quas, molestiae iste numquam illo quaerat nam enim omnis ullam vitae doloribus a accusantium minima, nemo aspernatur, facere nobis culpa quasi rerum aliquid. Iste quisquam repudiandae temporibus veritatis, eaque quae quidem error doloribus nostrum qui eveniet aliquam est vel consectetur architecto!';
+                        position: absolute;
+                        font-size: .9rem;
+                        text-align: center;
+                        top: 3rem;
+                        width: 470px;
+                        background-color: $bg-primary;
+                        overflow-y: hidden;
+                        height: 0;
+                        transition: height .6s ease-in-out;
+                        z-index: 1;
+                    }
+
+                    .title-on {
+                        transition: .3s ease-in-out;
+                    }
+
+                    &:hover {
+                        box-shadow: 0 0 0 0 transparent;
+                    }
+
+
+                    &:hover .title-on {
+                        transform: translateY(-8px);
+                    }
+
+                    &:hover::after {
+                        height: 150px;
+                    }
+                }
+            }
+        }
+
+        .text-services {
+            margin: 6rem 0 3rem 0;
+        }
+    }
+
+    #managements {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $bg-primary;
+        width: 100%;
+        height: 50vh;
+
+        .cards-managements {
+            width: 100%;
+            margin-top: 8rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            align-items: center;
+            justify-content: center;
+            
+
+            .card1 {
+                background-color: #221B31;
+            }
+            .card2 {
+                background-color: #221B31;
+            }
+            .card3 {
+                background-color: #221B31;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@use 'variables' as *;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(56, 8, 104);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.active {
+    background-color: rgb(243, 1, 1);
+    border-radius: .3rem;
+}
+
+.bar-separator {
+    width: 95%;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+@media (max-width: 1040px) {
+    html {
+        font-size: 70%;
+    }
+}
