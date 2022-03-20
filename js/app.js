@@ -81,7 +81,7 @@ const swiper = new Swiper('.swiper', {
     keyboard: true,
     breakpoints: {
       950: {
-        slidesPerView: 2,
+        slidesPerView:  2,
         setWrapperSize: true
       }
     }
@@ -96,10 +96,12 @@ const scrollReveal = ScrollReveal({
     reset: true
 });
 
-scrollReveal.reveal(`#home .title,
-                    #about .title-about, #about .text-about,
-                    #services .title-services`, 
-                    { interval: 100 });
+scrollReveal.reveal(`
+#home .title,
+#about .title-about, #about .text-about,
+#services .title-services,
+#tc .title-tc, #tc .list-tc, #tc .list-two-tc`, 
+{ interval: 200 });
 
                     
 const scrollReveal2 = ScrollReveal({
@@ -109,9 +111,26 @@ const scrollReveal2 = ScrollReveal({
     reset: true
 });
 
-scrollReveal2.reveal(`#services .layout-card,
-                    #managements .card1, #managements .card2, #managements .card3`, 
-                    { interval: 150 });
+scrollReveal2.reveal(`
+#services .layout-card,
+#managements .card1, #managements .card2, #managements .card3,
+#sales .card1, #sales .card2, #sales .card3, #social .card1, #social .card2, #social .card3,#portfolio .card1, #portfolio .card2, #portfolio .card3`,
+{ interval: 150 });
+
+
+
+const scrollReveal3 = ScrollReveal({
+ origin: 'bottom',
+ distance: '1rem',
+duration: 800,
+ reset: true
+});
+
+scrollReveal3.reveal(`
+#social .slider-social,
+#portfolio .slider-portfolio,
+#contact a`,
+{ interval: 150 });
 
 
 const backToTopButton = document.querySelector('.back-to-top')

@@ -211,3 +211,18 @@
         font-size: 80%;
     }
 }
+
+@media (max-width: 650px) {
+    #social {
+
+        .cards-social {
+            flex-direction: column;
+        }
+    }
+    #portfolio {
+
+        .cards-portfolio {
+            flex-direction: column;
+        }
+    }
+}

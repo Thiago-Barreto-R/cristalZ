@@ -1,0 +1,44 @@
+@use 'variables' as * ;
+
+
+.footer {
+    width: 100%;
+    max-width: 1380px;
+    color: $color-primary;
+
+    #contact {
+        width: 100%;
+        background-color: $bg-primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+        .title-contact {
+            font-size: 2.2rem;
+            margin-top: 8rem;
+        }
+    
+        .card-contact {
+            margin: 10rem 0 3rem 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            a {
+                transform: translateY(0);
+                transition: .3s ease-in-out;
+                display: inline-block;
+
+                &:nth-child(1) {
+                    background-color: blue;
+                    clip-path: circle();
+                    padding: .5rem;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
