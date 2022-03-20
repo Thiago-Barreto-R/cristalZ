@@ -77,42 +77,6 @@
                     margin: 10px;
                     background-color: #221B31;
                     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.07);
-                    position: relative;
-                }
-
-                .cards-on {
-                    transition: transform .3s ease-in-out;
-
-                    // &::after {
-                    //     content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis asperiores iure recusandae enim maiores illo, esse quidem quia dolore ipsum repellendus rerum aliquam doloremque dignissimos repellat corrupti voluptate eveniet vero error a consectetur! Unde debitis sint ad quos quas, molestiae iste numquam illo quaerat nam enim omnis ullam vitae doloribus a accusantium minima, nemo aspernatur, facere nobis culpa quasi rerum aliquid. Iste quisquam repudiandae temporibus veritatis, eaque quae quidem error doloribus nostrum qui eveniet aliquam est vel consectetur architecto!';
-                    //     position: absolute;
-                    //     font-size: .9rem;
-                    //     text-align: center;
-                    //     top: 3rem;
-                    //     width: 100%;
-                    //     background-color: $bg-primary;
-                    //     overflow-y: hidden;
-                    //     height: 0;
-                    //     transition: height .6s ease-in-out;
-                    //     z-index: 100;
-                    // }
-
-                    .title-on {
-                        transition: .3s ease-in-out;
-                    }
-
-                    &:hover {
-                        box-shadow: 0 0 0 0 transparent;
-                    }
-
-
-                    // &:hover .title-on {
-                    //     transform: translateY(-8px);
-                    // }
-
-                    &:hover::after {
-                        height: 150px;
-                    }
                 }
             }
         }

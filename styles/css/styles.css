@@ -66,6 +66,10 @@ body {
   transform: translateY(0);
 }
 
+.newList {
+  transform: scale(1);
+}
+
 .header-top {
   width: 100vw;
   max-width: 1380px;
@@ -197,19 +201,6 @@ body {
   margin: 10px;
   background-color: #221B31;
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.07);
-  position: relative;
-}
-.main #services .cards div .cards-on {
-  transition: transform 0.3s ease-in-out;
-}
-.main #services .cards div .cards-on .title-on {
-  transition: 0.3s ease-in-out;
-}
-.main #services .cards div .cards-on:hover {
-  box-shadow: 0 0 0 0 transparent;
-}
-.main #services .cards div .cards-on:hover::after {
-  height: 150px;
 }
 .main #services .text-services {
   margin: 6rem 0 3rem 0;
