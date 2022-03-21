@@ -19,7 +19,7 @@
         }
     
         .card-contact {
-            margin: 10rem 0 3rem 0;
+            margin: 8rem 0 3rem 0;
             width: 100%;
             display: flex;
             justify-content: space-around;
@@ -37,6 +37,24 @@
                     display: flex;
                     align-items: center;
                 }
+            }
+        }
+    }
+
+    #text-footer {
+        padding: 0 0 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+
+            .list-footer {
+                font-size: .8rem;
             }
         }
     }

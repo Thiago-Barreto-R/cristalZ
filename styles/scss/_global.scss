@@ -11,12 +11,13 @@ html {
 }
 
 body {
-    background-color: rgb(65, 65, 65);
+    background-color: $bg-primary;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     overflow-x: hidden;
+    font-family: 'Montserrat';
 }
 
 .active {
