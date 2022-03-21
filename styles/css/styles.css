@@ -72,7 +72,6 @@ body {
 
 .header-top {
   width: 100vw;
-  max-width: 1380px;
   background-color: #221b31fc;
   position: fixed;
   top: 0;
@@ -133,7 +132,6 @@ body {
 
 .main {
   width: 100%;
-  max-width: 1380px;
   color: #EAEAEA;
 }
 .main #home {
@@ -142,11 +140,12 @@ body {
   justify-content: center;
   background-color: #221B31;
   width: 100%;
-  height: 100vh;
+  padding-top: 14rem;
 }
 .main #home .title {
   font-size: 3rem;
   color: #EAEAEA;
+  line-height: 5rem;
 }
 .main #home .title .title--red {
   color: red;
@@ -161,7 +160,7 @@ body {
 }
 .main #about .title-about {
   font-size: 2.2rem;
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 .main #about .text-about {
   width: 80%;
@@ -176,6 +175,7 @@ body {
   flex-direction: column;
   background-color: #221B31;
   width: 100%;
+  height: 100vh;
 }
 .main #services .title-services {
   font-size: 2.2rem;
@@ -490,7 +490,6 @@ body {
 
 .footer {
   width: 100%;
-  max-width: 1380px;
   color: #EAEAEA;
 }
 .footer #contact {
