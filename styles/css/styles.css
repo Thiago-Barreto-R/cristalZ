@@ -140,12 +140,13 @@ body {
   justify-content: center;
   background-color: #221B31;
   width: 100%;
-  padding-top: 14rem;
+  padding-top: 12rem;
 }
 .main #home .title {
-  font-size: 3rem;
+  font-size: 6rem;
+  font-family: "Calligraffitti";
   color: #EAEAEA;
-  line-height: 5rem;
+  line-height: 1 rem;
 }
 .main #home .title .title--red {
   color: red;
