@@ -15,6 +15,7 @@
         .title {
             font-family: 'Calligraffitti';
             font-size: 4rem;
+            font-weight: 900;
             color: $color-primary;
 
             .title--red {
@@ -34,7 +35,7 @@
 
         .title-about {
             font-size: 2.2rem;
-            margin-top: 5rem;
+            padding-top: 6rem;
         }
 
         .text-about {
@@ -52,17 +53,16 @@
         flex-direction: column;
         background-color: $bg-primary;
         width: 100%;
-        padding-top: 3rem;
+        padding-top: 12rem;
 
         .title-services {
             font-size: 2.2rem;
-            margin-top: 12rem;
         }
 
         .cards {
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             align-items: center;
             justify-content: center;
             margin-top: 4rem;
@@ -79,6 +79,10 @@
                     margin: 10px;
                     background-color: #221B31;
                     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.07);
+
+                    .title {
+                        font-size: 90%;
+                    }
                 }
             }
         }
@@ -251,6 +255,7 @@
             align-items: center;
             justify-content: center;
             width: 85%;
+            
             height: 20rem;
             border-radius: .5rem;
             background-color: #2A223D;
@@ -292,7 +297,7 @@
                 align-items: center;
                 justify-content: center;
                 width: 15rem;
-                height: 10vh;
+                height: 4rem;
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221b31;
             }
@@ -301,7 +306,7 @@
                 align-items: center;
                 justify-content: center;
                 width: 15rem;
-                height: 10vh;
+                height: 4rem;
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221B31;
             }
@@ -310,7 +315,7 @@
                 align-items: center;
                 justify-content: center;
                 width: 15rem;
-                height: 10vh;
+                height: 4rem;
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221B31;
             }
@@ -319,6 +324,7 @@
         .slider-portfolio {
             margin-top: 4rem;
             width: 85%;
+            max-width: 1124px;
             height: 20rem;
             border-radius: .5rem;
             background-color: #2A223D;
@@ -424,7 +430,7 @@
                             align-items: center;
                             position: absolute;
                             bottom: .5rem;
-                            right: 4rem;
+                            right: 5rem;
                         }
                     }
                 }

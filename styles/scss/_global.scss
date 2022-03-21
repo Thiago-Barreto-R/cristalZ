@@ -11,10 +11,8 @@ html {
 }
 
 body {
-    background-color: $bg-primary;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: rgb(41, 40, 40);
+    overflow-x: scroll;
     flex-direction: column;
     overflow-x: hidden;
     font-family: 'Montserrat';
