@@ -1,16 +1,6 @@
 @use 'variables' as * ;
 
-
-@media (min-width:2093px ) {
-    .main {
-
-        #home {
-            // background-color: blanchedalmond;
-        }
-    }
-}
-
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
     body {
         overflow-x: hidden;
 

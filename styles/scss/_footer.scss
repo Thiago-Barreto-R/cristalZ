@@ -4,45 +4,12 @@
 .footer {
     width: 100%;
     color: $color-primary;
+    background-color: #171322;
 
-    #contact {
-        width: 100%;
-        background-color: $bg-primary;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
     
-        .title-contact {
-            font-size: 2.2rem;
-            margin-top: 8rem;
-        }
-    
-        .card-contact {
-            margin: 8rem 0 3rem 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            
-            a {
-                transform: translateY(0);
-                transition: .3s ease-in-out;
-                display: inline-block;
-
-                &:nth-child(1) {
-                    background-color: blue;
-                    clip-path: circle();
-                    padding: .5rem;
-                    display: flex;
-                    align-items: center;
-                }
-            }
-        }
-    }
-
     #text-footer {
-        padding: 0 0 2rem 1rem;
+        display: none;
+        padding: 2rem 0 2rem 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -51,10 +18,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             list-style: none;
 
             .list-footer {
                 font-size: .8rem;
+                color: $color-secondary;
             }
         }
     }

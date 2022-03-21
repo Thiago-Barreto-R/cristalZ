@@ -95,13 +95,13 @@ body {
 .header-top .nav-top .list .list-item .item {
   padding: 0.4rem 0.5rem;
   text-decoration: none;
-  color: #EAEAEA;
+  color: #bdb4b4;
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
   position: relative;
 }
 .header-top .nav-top .list .list-item .item:hover {
-  opacity: 0.8;
+  color: #fff;
 }
 .header-top .nav-top .list .list-item .item::before {
   content: "";
@@ -125,7 +125,7 @@ body {
 }
 .header-top .nav-top .mobile-menu div {
   background-color: #EAEAEA;
-  width: 2rem;
+  width: 32px;
   height: 2px;
   margin: 8px;
   transition: 0.3s ease-in-out;
@@ -186,7 +186,7 @@ body {
 .main #services .cards {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   align-items: center;
   justify-content: center;
   margin-top: 4rem;
@@ -199,7 +199,7 @@ body {
 }
 .main #services .cards div .layout-card {
   width: 70%;
-  height: 10vh;
+  height: 4rem;
   margin: 10px;
   background-color: #221B31;
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.07);
@@ -207,7 +207,7 @@ body {
 .main #services .text-services {
   margin: 6rem 0 3rem 0;
   color: #A39E9E;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .main #managements {
   background-color: #221B31;
@@ -216,7 +216,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 6rem;
+}
+.main #managements .title-managements {
+  font-size: 2.2rem;
 }
 .main #managements .cards-managements {
   width: 100%;
@@ -230,7 +233,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 15rem;
-  height: 10vh;
+  height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221b31;
 }
@@ -239,7 +242,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 15rem;
-  height: 10vh;
+  height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221B31;
 }
@@ -248,7 +251,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 15rem;
-  height: 10vh;
+  height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221B31;
 }
@@ -263,6 +266,7 @@ body {
 }
 .main #sales .title-sales {
   margin-top: 8rem;
+  font-size: 2.2rem;
 }
 .main #sales .cards-sales-bot {
   width: 100%;
@@ -276,7 +280,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 15rem;
-  height: 10vh;
+  height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221b31;
 }
@@ -285,7 +289,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 15rem;
-  height: 10vh;
+  height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221B31;
 }
@@ -294,7 +298,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 15rem;
-  height: 10vh;
+  height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221B31;
 }
@@ -324,7 +328,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 15rem;
-  height: 10vh;
+  height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221b31;
 }
@@ -333,7 +337,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 15rem;
-  height: 10vh;
+  height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221B31;
 }
@@ -342,7 +346,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 15rem;
-  height: 10vh;
+  height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221B31;
 }
@@ -458,6 +462,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 2rem;
 }
 .main #testimonies .title-testimonies {
   margin-top: 6rem;
@@ -488,46 +493,49 @@ body {
 }
 .main #testimonies .cards-testimonies .swiper-wrapper .swiper-slide .card cite img {
   margin: 0 0.5rem;
-  height: 3.5rem;
+  height: 3rem;
 }
-
-.footer {
-  width: 100%;
-  color: #EAEAEA;
+.main #testimonies .cards-testimonies .swiper-wrapper .swiper-slide .card .stars {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 4rem;
 }
-.footer #contact {
+.main #contact {
   width: 100%;
-  background-color: #221B31;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #221B31;
 }
-.footer #contact .title-contact {
+.main #contact .title-contact {
   font-size: 2.2rem;
-  margin-top: 8rem;
 }
-.footer #contact .card-contact {
-  margin: 8rem 0 3rem 0;
+.main #contact .card-contact {
+  margin: 4rem 0 3rem 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.footer #contact .card-contact a {
+.main #contact .card-contact a {
   transform: translateY(0);
   transition: 0.3s ease-in-out;
   display: inline-block;
+  color: #fff;
 }
-.footer #contact .card-contact a:nth-child(1) {
-  background-color: blue;
-  clip-path: circle();
-  padding: 0.5rem;
-  display: flex;
-  align-items: center;
+
+.footer {
+  width: 100%;
+  color: #EAEAEA;
+  background-color: #171322;
 }
 .footer #text-footer {
-  padding: 0 0 2rem 1rem;
+  display: none;
+  padding: 2rem 0 2rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -536,13 +544,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   list-style: none;
 }
 .footer #text-footer .list .list-footer {
   font-size: 0.8rem;
+  color: #A39E9E;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
   body {
     overflow-x: hidden;
   }
