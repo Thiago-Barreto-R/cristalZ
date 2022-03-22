@@ -166,6 +166,7 @@ body {
 }
 .main #about .text-about {
   width: 80%;
+  max-width: 1224px;
   text-align: center;
   font-size: 1.3rem;
   margin-top: 3rem;
@@ -184,6 +185,7 @@ body {
 }
 .main #services .cards {
   width: 100%;
+  max-width: 1224px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   align-items: center;
@@ -225,6 +227,7 @@ body {
 }
 .main #managements .cards-managements {
   width: 100%;
+  max-width: 1224px;
   margin-top: 4rem;
   display: flex;
   align-items: center;
@@ -272,6 +275,7 @@ body {
 }
 .main #sales .cards-sales-bot {
   width: 100%;
+  max-width: 1224px;
   margin-top: 4rem;
   display: flex;
   align-items: center;
@@ -319,6 +323,7 @@ body {
 }
 .main #social .cards-social {
   width: 100%;
+  max-width: 1224px;
   margin-top: 4rem;
   display: flex;
   align-items: center;
@@ -358,6 +363,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 85%;
+  max-width: 1224px;
   height: 20rem;
   border-radius: 0.5rem;
   background-color: #2A223D;
@@ -383,6 +389,7 @@ body {
 }
 .main #portfolio .cards-portfolio {
   width: 100%;
+  max-width: 1224px;
   margin-top: 4rem;
   display: flex;
   align-items: center;
@@ -419,7 +426,7 @@ body {
 .main #portfolio .slider-portfolio {
   margin-top: 4rem;
   width: 85%;
-  max-width: 1124px;
+  max-width: 1224px;
   height: 20rem;
   border-radius: 0.5rem;
   background-color: #2A223D;
@@ -469,6 +476,7 @@ body {
 }
 .main #testimonies .title-testimonies {
   margin-top: 6rem;
+  font-size: 2.2rem;
 }
 .main #testimonies .cards-testimonies .swiper-wrapper .swiper-slide .card {
   width: 95%;
@@ -520,6 +528,7 @@ body {
 .main #contact .card-contact {
   margin: 4rem 0 3rem 0;
   width: 100%;
+  max-width: 1220px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -719,7 +728,7 @@ body {
 }
 @media (max-width: 800px) {
   html {
-    font-size: 80%;
+    font-size: 75%;
   }
 }
 @media (max-width: 650px) {

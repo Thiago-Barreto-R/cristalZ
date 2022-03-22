@@ -100,13 +100,18 @@ scrollReveal.reveal(`
 #home .title,
 #about .title-about, #about .text-about,
 #services .title-services,
-#tc .title-tc, #tc .list-tc, #tc .list-two-tc`, 
+#tc .title-tc, #tc .list-tc, #tc .list-two-tc,
+#managements .title-managements,
+#sales .title-sales,
+#social .title-social,
+#portfolio .title-portfolio,
+#testimonies .title-testimonies`, 
 { interval: 200 });
 
                     
 const scrollReveal2 = ScrollReveal({
     origin: 'left',
-    distance: '20rem',
+    distance: '10rem',
     duration: 800,
     reset: true
 });

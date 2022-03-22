@@ -40,6 +40,7 @@
 
         .text-about {
             width: 80%;
+            max-width: 1224px;
             text-align: center;
             font-size: 1.3rem;
             margin-top: 3rem;
@@ -61,6 +62,7 @@
 
         .cards {
             width: 100%;
+            max-width: 1224px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             align-items: center;
@@ -109,6 +111,7 @@
 
         .cards-managements {
             width: 100%;
+            max-width: 1224px;
             margin-top: 4rem;
             display: flex;
             align-items: center;
@@ -161,6 +164,7 @@
 
         .cards-sales-bot {
             width: 100%;
+            max-width: 1224px;
             margin-top: 4rem;
             display: flex;
             align-items: center;
@@ -213,6 +217,7 @@
 
         .cards-social {
             width: 100%;
+            max-width: 1224px;
             margin-top: 4rem;
             display: flex;
             align-items: center;
@@ -255,7 +260,7 @@
             align-items: center;
             justify-content: center;
             width: 85%;
-            
+            max-width: 1224px;            
             height: 20rem;
             border-radius: .5rem;
             background-color: #2A223D;
@@ -285,6 +290,7 @@
 
         .cards-portfolio {
             width: 100%;
+            max-width: 1224px;
             margin-top: 4rem;
             display: flex;
             align-items: center;
@@ -324,7 +330,7 @@
         .slider-portfolio {
             margin-top: 4rem;
             width: 85%;
-            max-width: 1124px;
+            max-width: 1224px;
             height: 20rem;
             border-radius: .5rem;
             background-color: #2A223D;
@@ -384,6 +390,7 @@
 
         .title-testimonies {
             margin-top: 6rem;
+            font-size: 2.2rem;
         }
 
         .cards-testimonies {
@@ -453,6 +460,7 @@
         .card-contact {
             margin: 4rem 0 3rem 0;
             width: 100%;
+            max-width: 1220px;
             display: flex;
             justify-content: space-around;
             align-items: center;
