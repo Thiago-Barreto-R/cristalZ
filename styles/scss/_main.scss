@@ -45,6 +45,35 @@
             font-size: 1.3rem;
             margin-top: 3rem;
         }
+
+        .slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 3rem;
+            width: 100%;
+            height: 10vh;
+            padding: 0 .1rem;
+            overflow: hidden;
+
+            .sub-title-about {
+                font-size: 1.3rem;
+                font-weight: 100;
+                opacity: .8;
+            }
+
+            .my-slider {
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    color: red;
+                }
+            }
+        }
     }
 
     #services {
@@ -64,7 +93,7 @@
             width: 100%;
             max-width: 1224px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: 1fr 1fr;
             align-items: center;
             justify-content: center;
             margin-top: 4rem;
@@ -81,6 +110,7 @@
                     margin: 10px;
                     background-color: #221B31;
                     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.07);
+                    border-radius: .5rem;
 
                     .title {
                         font-size: 90%;
@@ -126,6 +156,7 @@
                 height: 4rem;
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221b31;
+                border-radius: .5rem;
             }
             .card2 {
                 display: flex;
@@ -135,6 +166,7 @@
                 height: 4rem;
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221B31;
+                border-radius: .5rem;
             }
             .card3 {
                 display: flex;
@@ -144,6 +176,7 @@
                 height: 4rem;
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221B31;
+                border-radius: .5rem;
             }
         }
     }
@@ -178,6 +211,7 @@
                 height: 4rem;
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221b31;
+                border-radius: .5rem;
             }
             .card2 {
                 display: flex;
@@ -187,6 +221,7 @@
                 height: 4rem;
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221B31;
+                border-radius: .5rem;
             }
             .card3 {
                 display: flex;
@@ -196,6 +231,7 @@
                 height: 4rem;
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221B31;
+                border-radius: .5rem;
             }
         }
         
@@ -233,6 +269,7 @@
                 height: 4rem;
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221b31;
+                border-radius: .5rem;
             }
             .card2 {
                 display: flex;
@@ -242,6 +279,7 @@
                 height: 4rem;
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221B31;
+                border-radius: .5rem;
             }
             .card3 {
                 display: flex;
@@ -251,6 +289,7 @@
                 height: 4rem;
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221B31;
+                border-radius: .5rem;
             }
         }
 
@@ -293,47 +332,252 @@
             max-width: 1224px;
             margin-top: 4rem;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-around;
+            justify-content: center;
             gap: 2rem;
-            
 
-            .card1 {
-                display: flex;
+            .cards-title {
+                width: 100%;
+                max-width: 1224px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
                 align-items: center;
-                justify-content: center;
-                width: 15rem;
-                height: 4rem;
-                box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
-                background-color: #221b31;
+                justify-content: space-around;
+                
+    
+                .card1 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 15rem;
+                    height: 4rem;
+                    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+                    background-color: #221b31;
+                    border-radius: .5rem;
+                }
+                .card2 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 15rem;
+                    height: 4rem;
+                    margin: 3rem 0;
+                    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+                    background-color: #221B31;
+                    border-radius: .5rem;
+                }
+                .card3 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 15rem;
+                    height: 4rem;
+                    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+                    background-color: #221B31;
+                    border-radius: .5rem;
+                }
             }
-            .card2 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 15rem;
-                height: 4rem;
-                box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
-                background-color: #221B31;
-            }
-            .card3 {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 15rem;
-                height: 4rem;
-                box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
-                background-color: #221B31;
-            }
-        }
 
-        .slider-portfolio {
-            margin-top: 4rem;
-            width: 85%;
-            max-width: 1224px;
-            height: 20rem;
-            border-radius: .5rem;
-            background-color: #2A223D;
+            .cards-imgs {
+                width: 95%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                align-items: center;
+                gap: 2rem;
+
+                .links-server {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 15rem;
+                    padding: 1rem;
+                    background: #332948;
+                    backdrop-filter: blur( 20px );
+                    border-radius: 10px;
+                    border-radius: .5rem;
+                    transition: .5s ease-in-out;
+                    position: relative;
+                    overflow: hidden;
+                    color: white;
+                    text-decoration: none;
+                    
+                    &:hover div::after {
+                        transform: scale(1.1);
+                    }
+
+                    .img1 {
+                        width: 100%;
+                        height: 10rem;
+                        overflow: hidden;
+                        position: relative;
+                        
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background-image: url(../../svg/BASCDAO.svg);
+                            width: 100%;
+                            height: 100%;
+                            background-size: cover;
+                            background-position: 50% 50%;
+                            transition: .3s ease-in-out;
+                        }
+                    }
+                    .img2 {
+                        width: 100%;
+                        height: 10rem;
+                        overflow: hidden;
+                        position: relative;
+                        
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background-image: url(../../svg/BarnyardFashionistas.svg);
+                            width: 100%;
+                            height: 100%;
+                            background-size: cover;
+                            background-position: center;
+                            transition: .3s ease-in-out;
+    
+                        }
+                    }
+                    .img3 {
+                        width: 100%;
+                        height: 10rem;
+                        overflow: hidden;
+                        position: relative;
+                        
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background-image: url(../../svg/NiftyRiots.svg);
+                            width: 100%;
+                            height: 100%;
+                            background-size: cover;
+                            background-position: center;
+                            transition: .3s ease-in-out;
+    
+                        }
+                    }
+                    .img4 {
+                        width: 100%;
+                        height: 10rem;
+                        overflow: hidden;
+                        position: relative;
+                        
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background-image: url(../../svg/cyberGirl.svg);
+                            width: 100%;
+                            height: 100%;
+                            background-size: cover;
+                            background-position: 50% 50%;
+                            transition: .3s ease-in-out;
+    
+                        }
+                    }
+                    .img5 {
+                        width: 100%;
+                        height: 10rem;
+                        overflow: hidden;
+                        position: relative;
+                        
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background-image: url(../../svg/Enviro.svg);
+                            width: 100%;
+                            height: 100%;
+                            background-size: cover;
+                            background-position: 50% 50%;
+                            transition: .3s ease-in-out;
+    
+                        }
+                    }
+                    .img6 {
+                        width: 100%;
+                        height: 10rem;
+                        overflow: hidden;
+                        position: relative;
+                        
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background-image: url(../../svg/RetroPandas.svg);
+                            width: 100%;
+                            height: 100%;
+                            background-size: cover;
+                            background-position: 50% 50%;
+                            transition: .3s ease-in-out;
+    
+                        }
+                    }
+                    .img7 {
+                        width: 100%;
+                        height: 10rem;
+                        overflow: hidden;
+                        position: relative;
+                        
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background-image: url(../../svg/Parametrise.svg);
+                            width: 100%;
+                            height: 100%;
+                            background-size: cover;
+                            background-position: 50% 50%;
+                            transition: .3s ease-in-out;
+    
+                        }
+                    }
+                    .img8 {
+                        width: 100%;
+                        height: 10rem;
+                        overflow: hidden;
+                        position: relative;
+                        
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background-image: url(../../svg/AnnieSBookshop.svg);
+                            width: 100%;
+                            height: 100%;
+                            background-size: cover;
+                            background-position: 50% 50%;
+                            transition: .3s ease-in-out;
+    
+                        }
+                    }
+                    .img9 {
+                        width: 100%;
+                        height: 10rem;
+                        overflow: hidden;
+                        position: relative;
+                        
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            background-image: url(../../svg/RiseAngle.svg);
+                            width: 100%;
+                            height: 100%;
+                            background-size: cover;
+                            background-position: 50% 50%;
+                            transition: .3s ease-in-out;
+    
+                        }
+                    }
+
+                    h3 {
+                        margin-top: 1.5rem;
+                    }
+                }
+
+                .one {
+                    background: linear-gradient(135deg, #191522, #ebeaee, #191522);
+                }
+            }
         }
     }
 
@@ -347,7 +591,7 @@
 
         .title-tc {
             font-size: 2.2rem;
-            margin-top: 8rem;
+            margin-top: 5rem;
         }
 
         .center {

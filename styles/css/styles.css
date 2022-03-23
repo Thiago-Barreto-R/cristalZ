@@ -171,6 +171,31 @@ body {
   font-size: 1.3rem;
   margin-top: 3rem;
 }
+.main #about .slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  width: 100%;
+  height: 10vh;
+  padding: 0 0.1rem;
+  overflow: hidden;
+}
+.main #about .slider .sub-title-about {
+  font-size: 1.3rem;
+  font-weight: 100;
+  opacity: 0.8;
+}
+.main #about .slider .my-slider {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main #about .slider .my-slider p {
+  color: red;
+}
 .main #services {
   display: flex;
   align-items: center;
@@ -187,7 +212,7 @@ body {
   width: 100%;
   max-width: 1224px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
   margin-top: 4rem;
@@ -204,6 +229,7 @@ body {
   margin: 10px;
   background-color: #221B31;
   box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.07);
+  border-radius: 0.5rem;
 }
 .main #services .cards div .layout-card .title {
   font-size: 90%;
@@ -241,6 +267,7 @@ body {
   height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221b31;
+  border-radius: 0.5rem;
 }
 .main #managements .cards-managements .card2 {
   display: flex;
@@ -250,6 +277,7 @@ body {
   height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221B31;
+  border-radius: 0.5rem;
 }
 .main #managements .cards-managements .card3 {
   display: flex;
@@ -259,6 +287,7 @@ body {
   height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221B31;
+  border-radius: 0.5rem;
 }
 .main #sales {
   background-color: #221B31;
@@ -289,6 +318,7 @@ body {
   height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221b31;
+  border-radius: 0.5rem;
 }
 .main #sales .cards-sales-bot .card2 {
   display: flex;
@@ -298,6 +328,7 @@ body {
   height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221B31;
+  border-radius: 0.5rem;
 }
 .main #sales .cards-sales-bot .card3 {
   display: flex;
@@ -307,6 +338,7 @@ body {
   height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221B31;
+  border-radius: 0.5rem;
 }
 .main #social {
   background-color: #221B31;
@@ -338,6 +370,7 @@ body {
   height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221b31;
+  border-radius: 0.5rem;
 }
 .main #social .cards-social .card2 {
   display: flex;
@@ -347,6 +380,7 @@ body {
   height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221B31;
+  border-radius: 0.5rem;
 }
 .main #social .cards-social .card3 {
   display: flex;
@@ -356,6 +390,7 @@ body {
   height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221B31;
+  border-radius: 0.5rem;
 }
 .main #social .slider-social {
   margin-top: 4rem;
@@ -392,11 +427,20 @@ body {
   max-width: 1224px;
   margin-top: 4rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   gap: 2rem;
 }
-.main #portfolio .cards-portfolio .card1 {
+.main #portfolio .cards-portfolio .cards-title {
+  width: 100%;
+  max-width: 1224px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-around;
+}
+.main #portfolio .cards-portfolio .cards-title .card1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -404,32 +448,205 @@ body {
   height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221b31;
-}
-.main #portfolio .cards-portfolio .card2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15rem;
-  height: 4rem;
-  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
-  background-color: #221B31;
-}
-.main #portfolio .cards-portfolio .card3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15rem;
-  height: 4rem;
-  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
-  background-color: #221B31;
-}
-.main #portfolio .slider-portfolio {
-  margin-top: 4rem;
-  width: 85%;
-  max-width: 1224px;
-  height: 20rem;
   border-radius: 0.5rem;
-  background-color: #2A223D;
+}
+.main #portfolio .cards-portfolio .cards-title .card2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 4rem;
+  margin: 3rem 0;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+  background-color: #221B31;
+  border-radius: 0.5rem;
+}
+.main #portfolio .cards-portfolio .cards-title .card3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 4rem;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+  background-color: #221B31;
+  border-radius: 0.5rem;
+}
+.main #portfolio .cards-portfolio .cards-imgs {
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 15rem;
+  padding: 1rem;
+  background: #332948;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border-radius: 0.5rem;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server:hover div::after {
+  transform: scale(1.1);
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img1 {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img1::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../svg/BASCDAO.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: 0.3s ease-in-out;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img2 {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img2::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../svg/BarnyardFashionistas.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img3 {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img3::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../svg/NiftyRiots.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s ease-in-out;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img4 {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img4::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../svg/cyberGirl.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: 0.3s ease-in-out;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img5 {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img5::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../svg/Enviro.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: 0.3s ease-in-out;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img6 {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img6::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../svg/RetroPandas.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: 0.3s ease-in-out;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img7 {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img7::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../svg/Parametrise.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: 0.3s ease-in-out;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img8 {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img8::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../svg/AnnieSBookshop.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: 0.3s ease-in-out;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img9 {
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server .img9::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../svg/RiseAngle.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: 0.3s ease-in-out;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server h3 {
+  margin-top: 1.5rem;
+}
+.main #portfolio .cards-portfolio .cards-imgs .one {
+  background: linear-gradient(135deg, #191522, #ebeaee, #191522);
 }
 .main #tc {
   background-color: #221B31;
@@ -441,7 +658,7 @@ body {
 }
 .main #tc .title-tc {
   font-size: 2.2rem;
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 .main #tc .center {
   display: flex;
