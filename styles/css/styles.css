@@ -65,10 +65,6 @@ body {
   transform: translateY(0);
 }
 
-.newList {
-  transform: scale(1);
-}
-
 .header-top {
   width: 100vw;
   background-color: #221b31fc;
@@ -255,9 +251,9 @@ body {
   width: 100%;
   max-width: 1224px;
   margin-top: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
 }
 .main #managements .cards-managements .card1 {
   display: flex;
@@ -306,9 +302,9 @@ body {
   width: 100%;
   max-width: 1224px;
   margin-top: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
 }
 .main #sales .cards-sales-bot .card1 {
   display: flex;
@@ -316,6 +312,7 @@ body {
   justify-content: center;
   width: 15rem;
   height: 4rem;
+  margin-bottom: 1rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221b31;
   border-radius: 0.5rem;
@@ -326,11 +323,34 @@ body {
   justify-content: center;
   width: 15rem;
   height: 4rem;
+  margin-bottom: 1rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
   background-color: #221B31;
   border-radius: 0.5rem;
 }
 .main #sales .cards-sales-bot .card3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+  background-color: #221B31;
+  border-radius: 0.5rem;
+}
+.main #sales .cards-sales-bot .card4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 4rem;
+  margin: 1rem 0;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+  background-color: #221B31;
+  border-radius: 0.5rem;
+}
+.main #sales .cards-sales-bot .card5 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -357,9 +377,9 @@ body {
   width: 100%;
   max-width: 1224px;
   margin-top: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
   gap: 2rem;
 }
 .main #social .cards-social .card1 {
@@ -437,8 +457,7 @@ body {
   max-width: 1224px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: space-around;
+  place-items: center;
 }
 .main #portfolio .cards-portfolio .cards-title .card1 {
   display: flex;
@@ -644,9 +663,13 @@ body {
 }
 .main #portfolio .cards-portfolio .cards-imgs .links-server h3 {
   margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+.main #portfolio .cards-portfolio .cards-imgs .links-server h3:hover {
+  color: red;
 }
 .main #portfolio .cards-portfolio .cards-imgs .one {
-  background: linear-gradient(135deg, #191522, #ebeaee, #191522);
+  background: linear-gradient(135deg, #221e2b, #eae9ed, #221e2b);
 }
 .main #tc {
   background-color: #221B31;
@@ -730,6 +753,40 @@ body {
   position: absolute;
   bottom: 0.5rem;
   right: 5rem;
+}
+.main #testimonies .purchase {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.main #testimonies .purchase .button {
+  text-decoration: none;
+  color: white;
+  background-color: #332948;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  text-decoration: line-through;
+  position: relative;
+  margin-top: 1rem;
+}
+.main #testimonies .purchase .button::after {
+  content: "buy service first";
+  position: absolute;
+  left: 1.3rem;
+  opacity: 0;
+  top: 0;
+  transition: 0.3s ease-in-out;
+}
+.main #testimonies .purchase .button:hover::after {
+  transform: translateY(2.5rem);
+  opacity: 1;
+}
+.main #testimonies .purchase .text-button {
+  font-size: 0.8rem;
+  margin-right: 1.7rem;
+  color: #fff;
 }
 .main #contact {
   width: 100%;
@@ -952,11 +1009,30 @@ body {
   .main #home .title {
     font-size: 3.5rem;
   }
-  .main #social .cards-social {
-    flex-direction: column;
+  .main #services .cards {
+    grid-template-columns: 1fr;
   }
-  .main #portfolio .cards-portfolio {
-    flex-direction: column;
+  .main #managements .cards-managements {
+    grid-template-columns: 1fr;
+  }
+  .main #sales .cards-sales-bot {
+    grid-template-columns: 1fr;
+  }
+  .main #social .cards-social {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 590px) {
+  .main #portfolio .cards-portfolio .cards-title {
+    grid-template-columns: 1fr;
+  }
+  .main #portfolio .cards-portfolio .cards-imgs {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 400px) {
+  .main #portfolio .cards-portfolio .cards-imgs {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 390px) {

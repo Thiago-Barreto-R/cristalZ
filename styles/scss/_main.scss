@@ -143,9 +143,9 @@
             width: 100%;
             max-width: 1224px;
             margin-top: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            place-items: center;
             
 
             .card1 {
@@ -199,9 +199,9 @@
             width: 100%;
             max-width: 1224px;
             margin-top: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            place-items: center;
 
             .card1 {
                 display: flex;
@@ -209,6 +209,7 @@
                 justify-content: center;
                 width: 15rem;
                 height: 4rem;
+                margin-bottom: 1rem;
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221b31;
                 border-radius: .5rem;
@@ -219,11 +220,34 @@
                 justify-content: center;
                 width: 15rem;
                 height: 4rem;
+                margin-bottom: 1rem;
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221B31;
                 border-radius: .5rem;
             }
             .card3 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 15rem;
+                height: 4rem;
+                margin-bottom: 1rem;
+                box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+                background-color: #221B31;
+                border-radius: .5rem;
+            }
+            .card4 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 15rem;
+                height: 4rem;
+                margin: 1rem 0;
+                box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+                background-color: #221B31;
+                border-radius: .5rem;
+            }
+            .card5 {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -255,9 +279,9 @@
             width: 100%;
             max-width: 1224px;
             margin-top: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            place-items: center;
             gap: 2rem;
             
 
@@ -342,8 +366,7 @@
                 max-width: 1224px;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                align-items: center;
-                justify-content: space-around;
+                place-items: center;
                 
     
                 .card1 {
@@ -571,11 +594,16 @@
 
                     h3 {
                         margin-top: 1.5rem;
+                        font-size: 1.1rem;
+
+                        &:hover {
+                            color: red;
+                        }
                     }
                 }
 
                 .one {
-                    background: linear-gradient(135deg, #191522, #ebeaee, #191522);
+                    background: linear-gradient(135deg, #221e2b, #eae9ed, #221e2b);
                 }
             }
         }
@@ -685,6 +713,45 @@
                         }
                     }
                 }
+            }
+        }
+
+        .purchase {
+            width: 50%;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+
+            .button {
+                text-decoration: none;
+                color: white;
+                background-color: #332948;
+                padding: .5rem 1rem;
+                border-radius: .6rem;
+                cursor: pointer;
+                text-decoration: line-through;
+                position: relative;
+                margin-top: 1rem;
+                
+                &::after {
+                    content: 'buy service first';
+                    position: absolute;
+                    left: 1.3rem;
+                    opacity: 0;
+                    top: 0;
+                    transition: .3s ease-in-out;
+                }
+
+                &:hover::after {
+                    transform: translateY(2.5rem);
+                    opacity: 1;
+                }
+            }
+
+            .text-button {
+                font-size: .8rem;
+                margin-right: 1.7rem;
+                color: #fff;
             }
         }
     }

@@ -147,17 +147,3 @@ window.addEventListener('scroll', function() {
     backToTopButton.classList.remove('appaer')
   }
 })
-
-
-// Slider
-
-let slider = tns ({
-  container: '.my-slider',
-  items: 3,
-  controls: false,
-  nav: false,
-  speed: 1700,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  autoplayButtonOutput: false,
-})

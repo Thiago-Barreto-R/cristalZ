@@ -224,18 +224,66 @@
                 font-size: 3.5rem;
             }
         }
+
+        #services  {
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+        #managements  {
+
+            .cards-managements{
+                grid-template-columns: 1fr;
+            }
+        }
+        #sales  {
+
+            .cards-sales-bot {
+                grid-template-columns: 1fr;
+            }
+        }
     
         #social {
     
             .cards-social {
-                flex-direction: column;
+                grid-template-columns: 1fr;
             }
         }
+    }
+}
+
+@media (max-width: 590px) {
+    .main {
+
         #portfolio {
-    
+
             .cards-portfolio {
-                flex-direction: column;
+
+                .cards-title {
+                    grid-template-columns: 1fr;
+                }
+
+                .cards-imgs {
+                    grid-template-columns: 1fr 1fr;
+                }
             }
+
+        }
+    }
+}
+@media (max-width: 400px) {
+    .main {
+
+        #portfolio {
+
+            .cards-portfolio {
+
+                .cards-imgs {
+                    grid-template-columns: 1fr;
+                }
+            }
+
         }
     }
 }
