@@ -294,6 +294,15 @@
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221b31;
                 border-radius: .5rem;
+
+                img {
+                    width: 5.5rem;
+                    padding: 1rem;
+                    border-radius: 0 .5rem .5rem 0;
+                    background-color: #332948;
+                    height: 4rem;
+                    transform: translateX(3.5rem);
+                }
             }
             .card2 {
                 display: flex;
@@ -304,6 +313,15 @@
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221B31;
                 border-radius: .5rem;
+
+                img {
+                    width: 5.5rem;
+                    padding: 1rem;
+                    border-radius: 0 .5rem .5rem 0;
+                    background-color: #332948;
+                    height: 4rem;
+                    transform: translateX(2rem);
+                }
             }
             .card3 {
                 display: flex;
@@ -314,25 +332,15 @@
                 box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
                 background-color: #221B31;
                 border-radius: .5rem;
-            }
-        }
 
-        .slider-social {
-            margin-top: 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 85%;
-            max-width: 1224px;            
-            height: 20rem;
-            border-radius: .5rem;
-            background-color: #2A223D;
-            position: relative;
-            
-            .text-social {
-                position: absolute;
-                font-size: 2rem;
-                top: 2rem;
+                img {
+                    width: 5.5rem;
+                    padding: 1rem;
+                    border-radius: 0 .5rem .5rem 0;
+                    background-color: #332948;
+                    height: 4rem;
+                    transform: translateX(2.4rem);
+                }
             }
         }
     }
@@ -780,11 +788,22 @@
                 transform: translateY(0);
                 transition: .3s ease-in-out;
                 display: inline-block;
+                position: relative;
                 color: #fff;
                 
                 p {
                     transform: translateX(-2rem);
                     font-size: .8rem;
+                }
+            }
+
+            .discord {
+
+                &::after {
+                    content: 'Crystal Z#1000';
+                    position: absolute;
+                    top: 1.5rem;
+                    left: -.8rem;
                 }
             }
         }
