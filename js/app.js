@@ -80,7 +80,7 @@ const swiper = new Swiper('.swiper', {
     mousewheel: true,
     keyboard: true,
     breakpoints: {
-      950: {
+      500: {
         slidesPerView:  2,
         setWrapperSize: true
       }
@@ -119,7 +119,8 @@ const scrollReveal2 = ScrollReveal({
 scrollReveal2.reveal(`
 #services .layout-card,
 #managements .card1, #managements .card2, #managements .card3,
-#sales .card1, #sales .card2, #sales .card3, #social .card1, #social .card2, #social .card3,#portfolio .card1, #portfolio .card2, #portfolio .card3`,
+#sales .card1, #sales .card2, #sales .card3, #sales .card4, #sales .card5, #sales .card6,
+#social .card1, #social .card2, #social .card3,#portfolio .card1, #portfolio .card2, #portfolio .card3`,
 { interval: 150 });
 
 

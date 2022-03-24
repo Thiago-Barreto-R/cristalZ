@@ -65,6 +65,20 @@ body {
   transform: translateY(0);
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #221B31;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #332948;
+  border-radius: 20px;
+  border: 3px solid #221B31;
+}
+
 .header-top {
   width: 100vw;
   background-color: #221b31fc;
@@ -272,7 +286,7 @@ body {
   width: 15rem;
   height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
-  background-color: #221B31;
+  background-color: #221b31;
   border-radius: 0.5rem;
 }
 .main #managements .cards-managements .card3 {
@@ -282,7 +296,7 @@ body {
   width: 15rem;
   height: 4rem;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
-  background-color: #221B31;
+  background-color: #221b31;
   border-radius: 0.5rem;
 }
 .main #sales {
@@ -351,6 +365,16 @@ body {
   border-radius: 0.5rem;
 }
 .main #sales .cards-sales-bot .card5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 4rem;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.207);
+  background-color: #221B31;
+  border-radius: 0.5rem;
+}
+.main #sales .cards-sales-bot .card6 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -435,6 +459,26 @@ body {
   background-color: #332948;
   height: 4rem;
   transform: translateX(2.4rem);
+}
+.main #social .medias-social {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform: translateY(4rem);
+}
+.main #social .medias-social a img {
+  height: 1.7rem;
+}
+.main #social .medias-social .discord {
+  position: relative;
+}
+.main #social .medias-social .discord::after {
+  content: "Crystal Z#1000";
+  position: absolute;
+  top: 2rem;
+  right: -1rem;
 }
 .main #portfolio {
   background-color: #221B31;
@@ -677,6 +721,7 @@ body {
 }
 .main #portfolio .cards-portfolio .cards-imgs .one {
   background: linear-gradient(135deg, #221e2b, #eae9ed, #221e2b);
+  text-transform: uppercase;
 }
 .main #tc {
   background-color: #221B31;
