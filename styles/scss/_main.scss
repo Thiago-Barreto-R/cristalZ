@@ -781,6 +781,11 @@
                 transition: .3s ease-in-out;
                 display: inline-block;
                 color: #fff;
+                
+                p {
+                    transform: translateX(-2rem);
+                    font-size: .8rem;
+                }
             }
         }
     }

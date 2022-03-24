@@ -813,6 +813,10 @@ body {
   display: inline-block;
   color: #fff;
 }
+.main #contact .card-contact a p {
+  transform: translateX(-2rem);
+  font-size: 0.8rem;
+}
 
 .footer {
   width: 100%;
