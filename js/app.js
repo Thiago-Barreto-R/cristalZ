@@ -133,9 +133,9 @@ duration: 800,
 });
 
 scrollReveal3.reveal(`
-#social .medias-social,
+#social a, #social p,
 #portfolio .slider-portfolio,
-#contact a`,
+#contact p, #contact a`,
 { interval: 150 });
 
 
