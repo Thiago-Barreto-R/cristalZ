@@ -69,26 +69,6 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-
-
-
-const swiper = new Swiper('.swiper', {
-    slidesPreView: 1,
-    pagination: {
-        el: '.swiper-pagination'
-    },
-    mousewheel: true,
-    keyboard: true,
-    breakpoints: {
-      500: {
-        slidesPerView:  2,
-        setWrapperSize: true
-      }
-    }
-});
-
-
-
 const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '1rem',
