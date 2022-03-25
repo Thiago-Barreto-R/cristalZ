@@ -133,7 +133,7 @@ duration: 800,
 });
 
 scrollReveal3.reveal(`
-#social .slider-social,
+#social .medias-social,
 #portfolio .slider-portfolio,
 #contact a`,
 { interval: 150 });

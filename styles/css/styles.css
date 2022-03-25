@@ -475,12 +475,14 @@ body::-webkit-scrollbar-thumb {
 .main #social .medias-social .discord {
   position: relative;
 }
-.main #social .medias-social .discord span {
-  content: "CrystalZ#1000";
+.main #social .medias-social .discord a {
   position: absolute;
-  font-size: 0.8rem;
-  top: 2rem;
-  right: -1.8rem;
+  display: inline-block;
+  left: -3rem;
+  top: 1.5rem;
+}
+.main #social .medias-social .discord a span {
+  margin-left: 0.3rem;
 }
 .main #portfolio {
   background-color: #221B31;
@@ -788,12 +790,17 @@ body::-webkit-scrollbar-thumb {
   transform: translateX(-2rem);
   font-size: 0.8rem;
 }
-.main #contact .card-contact .discord span {
-  content: "CrystalZ#1000";
+.main #contact .card-contact .discord {
+  position: relative;
+}
+.main #contact .card-contact .discord a {
   position: absolute;
+  display: inline-block;
+  left: -3rem;
   top: 1.5rem;
-  font-size: 0.8rem;
-  left: -1.9rem;
+}
+.main #contact .card-contact .discord a span {
+  margin-left: 0.3rem;
 }
 
 .footer {

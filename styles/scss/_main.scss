@@ -373,12 +373,15 @@
             .discord {
                 position: relative;
 
-                span {
-                    content: 'CrystalZ#1000';
+                a {
                     position: absolute;
-                    font-size: .8rem;
-                    top: 2rem;
-                    right: -1.8rem;
+                    display: inline-block;
+                    left: -3rem;
+                    top: 1.5rem;
+
+                    span {
+                        margin-left: .3rem;
+                    }
                 }
             }
         }
@@ -732,13 +735,17 @@
             }
 
             .discord {
+                position: relative;
 
-                span {
-                    content: 'CrystalZ#1000';
+                a {
                     position: absolute;
+                    display: inline-block;
+                    left: -3rem;
                     top: 1.5rem;
-                    font-size: .8rem;
-                    left: -1.9rem;
+
+                    span {
+                        margin-left: .3rem;
+                    }
                 }
             }
         }
