@@ -755,91 +755,6 @@ body::-webkit-scrollbar-thumb {
 .main #tc .center .list .list-tc .list-two .list-two-tc {
   text-indent: 3rem;
 }
-.main #testimonies {
-  width: 100%;
-  background-color: #221B31;
-  display: block;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding-bottom: 2rem;
-}
-.main #testimonies .title-testimonies {
-  margin-top: 6rem;
-  font-size: 2.2rem;
-}
-.main #testimonies .cards-testimonies .swiper-wrapper .swiper-slide .card {
-  width: 95%;
-  height: 70%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #332948;
-  position: relative;
-  border-radius: 0.5rem;
-}
-.main #testimonies .cards-testimonies .swiper-wrapper .swiper-slide .card .comments {
-  position: absolute;
-  top: 15px;
-  left: 10px;
-  font-size: 1rem;
-  width: 90%;
-}
-.main #testimonies .cards-testimonies .swiper-wrapper .swiper-slide .card cite {
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  display: flex;
-  align-items: center;
-}
-.main #testimonies .cards-testimonies .swiper-wrapper .swiper-slide .card cite img {
-  margin: 0 0.5rem;
-  height: 3rem;
-}
-.main #testimonies .cards-testimonies .swiper-wrapper .swiper-slide .card .stars {
-  width: 30px;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  bottom: 0.5rem;
-  right: 5rem;
-}
-.main #testimonies .purchase {
-  width: 50%;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-}
-.main #testimonies .purchase .button {
-  text-decoration: none;
-  color: white;
-  background-color: #332948;
-  padding: 0.5rem 1rem;
-  border-radius: 0.6rem;
-  cursor: pointer;
-  text-decoration: line-through;
-  position: relative;
-  margin-top: 1rem;
-}
-.main #testimonies .purchase .button::after {
-  content: "buy service first";
-  position: absolute;
-  left: 1.3rem;
-  opacity: 0;
-  top: 0;
-  transition: 0.3s ease-in-out;
-}
-.main #testimonies .purchase .button:hover::after {
-  transform: translateY(2.5rem);
-  opacity: 1;
-}
-.main #testimonies .purchase .text-button {
-  font-size: 0.8rem;
-  margin-right: 1.7rem;
-  color: #fff;
-}
 .main #contact {
   width: 100%;
   display: flex;
@@ -850,6 +765,7 @@ body::-webkit-scrollbar-thumb {
 }
 .main #contact .title-contact {
   font-size: 2.2rem;
+  margin-top: 5rem;
 }
 .main #contact .card-contact {
   margin: 4rem 0 3rem 0;
