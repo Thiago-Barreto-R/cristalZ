@@ -373,11 +373,12 @@
             .discord {
                 position: relative;
 
-                &::after {
-                    content: 'Crystal Z#1000';
+                span {
+                    content: 'CrystalZ#1000';
                     position: absolute;
+                    font-size: .8rem;
                     top: 2rem;
-                    right: -1rem;
+                    right: -1.5rem;
                 }
             }
         }
@@ -732,11 +733,12 @@
 
             .discord {
 
-                &::after {
-                    content: 'Crystal Z#1000';
+                span {
+                    content: 'CrystalZ#1000';
                     position: absolute;
                     top: 1.5rem;
-                    left: -.8rem;
+                    font-size: .8rem;
+                    left: -1.9rem;
                 }
             }
         }

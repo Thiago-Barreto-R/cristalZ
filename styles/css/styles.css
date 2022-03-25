@@ -475,11 +475,12 @@ body::-webkit-scrollbar-thumb {
 .main #social .medias-social .discord {
   position: relative;
 }
-.main #social .medias-social .discord::after {
-  content: "Crystal Z#1000";
+.main #social .medias-social .discord span {
+  content: "CrystalZ#1000";
   position: absolute;
+  font-size: 0.8rem;
   top: 2rem;
-  right: -1rem;
+  right: -1.5rem;
 }
 .main #portfolio {
   background-color: #221B31;
@@ -787,11 +788,12 @@ body::-webkit-scrollbar-thumb {
   transform: translateX(-2rem);
   font-size: 0.8rem;
 }
-.main #contact .card-contact .discord::after {
-  content: "Crystal Z#1000";
+.main #contact .card-contact .discord span {
+  content: "CrystalZ#1000";
   position: absolute;
   top: 1.5rem;
-  left: -0.8rem;
+  font-size: 0.8rem;
+  left: -1.9rem;
 }
 
 .footer {
